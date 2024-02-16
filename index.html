@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+ crossorigin="anonymous" 
+ referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+.main{
+    
+}
+
+.head-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightsteelblue;
+    color: darkblue;
+    padding: 10px 20px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    /* gap: 30px; */
+    
+}
+
+
+
+.left span {
+  padding: 0px 10px;
+    cursor: pointer;
+    border-right: 1px solid white;
+}
+
+.center h1 {
+    margin: 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right-world {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 5px;
+    padding: 0 5px;
+    border-right: 1px solid white;
+}
+
+.right-world span {
+    margin-right: 5px;
+}
+
+h3 {
+    margin: 0;
+    cursor: pointer;
+}
+
+.fa-solid,
+.fa-brands {
+    font-size: 1.5rem;
+}
+.country, .home, .aboutus, .services, .gallery, .contactus{
+    list-style: none;
+    display: none;
+    position: absolute;
+    /* top: 70px;
+    right: 90px; */
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+    
+}
+li{
+    border-bottom: 1px solid black;
+
+    &:hover{
+        background-color: aqua;
+        cursor: pointer;
+    }
+}
+
+*{
+    margin: 0;
+}
+.main1{
+    margin: 0;
+    row-gap: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: lightcyan;
+    width: 100%;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 20px;
+
+}
+.sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 280px;
+    gap: 90px;
+
+}
+button:hover {
+/* color: red; */
+cursor: pointer;
+background-color: aqua;
+}
+button1:hover{
+    cursor: pointer;
+}
+
+
+.first{
+    padding-top: 20px;
+}
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: lightcoral;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.main22{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    padding-top: 10px;  
+}
+
+.main311, .main321, .main331, .main341{
+ justify-content: space-between;
+ align-items: center;
+ text-align: center;
+ /* width: 1000px; */
+ padding-top: 20px;
+gap: 50px;
+margin-left: 0;
+margin-right: 0;
+display: none;
+}
+.main351{
+justify-content: space-between;
+ align-items: center;
+ text-align: center;
+ padding-top: 20px;
+gap: 50px;
+margin-left: 0;
+margin-right: 0;
+}
+.main4{
+    height: 200px;
+}
+img{
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+</style>
+<body>
+    <div class="main">
+    <div class="head-main">
+
+<div class="left">
+    <span>follows on</span>
+
+    <span><i class="fa-brands fa-facebook-f"></i></span>
+    <span><i class="fa-brands fa-twitter"></i></span> 
+    <span><i class="fa-brands fa-instagram"></i></span> 
+</div>
+
+<div class="center">
+    <h1>Food CAfe</h1>
+</div>
+
+<div class="right">
+
+    <div class="right-world">
+<span><i class="fa-solid fa-earth-americas"></i></span> 
+<div class="English">
+<button1 onclick="show()">English</button1>
+<div id="countryname" class="country" >
+
+    <li>English</li>
+   <li>Italian</li>
+   <li>France</li>
+   <li>Spanish</li>
+   <li>Poland</li>
+   <li>German</li>
+</div></div>
+
+    </div>
+
+    <h3>Login</h3>
+    
+
+
+    
+</div>
+    </div>
+    <div class="main2">
+        <div class="main21">
+        <button1 onclick="show1()" onmouseout="out()">Home</button1>
+        <div id="home" class="home" >
+        <li>Home1</li>
+        <li>Home2</li>
+        <li>Home3</li>
+    </div>
+    </div>
+    <div class="main22">
+    <button1 onclick="show2()" onmouseout="out()">About Us</button1>
+        <div id="aboutus" class="aboutus" >
+            <li>Who We Are</li>
+            <li>Team</li>
+            <li>FAQ</li>
+        </div>
+        </div>
+        <div class="main23">
+        <button1 onclick="show3()" onmouseout="out()">Services</button1>
+        <div id="services" class="services" >
+            <li>Service1</li>
+            <li>Service2</li>
+            <li>Service3</li>
+        </div>
+        </div>
+        <div class="main24">
+        <button1 onclick="show4()" onmouseout="out()">Gallery</button1>
+        <div id="gallery" class="gallery" >
+            <li>Gallery1</li>
+            <li>Gallery2</li>
+            <li>Gallery3</li>
+            </div>
+        </div>
+        <div class="main25">
+        <button1 onclick="show5()" onmouseout="out()">Contact Us</button1>
+        <div id="contactus" class="contactus" >
+            <li>Contact1</li>
+            <li>Contact2</li>
+            <li>Contact3</li> 
+        </div>
+        </div>
+    </div>
+    <div class="main1">
+        
+        <div class="sub">       
+       <div class="sub1"> <button onclick="document.getElementById('img1').src='woodland-2.jpeg'">Click1</button></div>
+        <div class="sub2"><button onclick="document.getElementById('img1').src='woodland-3.jpg'">Click2</button></div>
+        <div class="sub3"><button onclick="document.getElementById('img1').src='woodland-4.jpg'">Click3</button></div>
+    </div>
+        <div class="first"><img id="img1" src="woodland-1.jpg" alt="" height="300px" width="500px"></div>
+
+    </div>
+
+    <div class="main3">
+<div class="main31">
+    <button onclick="show6()" onmouseout="out()">Coffee</button>
+    
+</div>
+<div class="main32">
+    <button onclick="show7()" onmouseout="out()">Colddrink</button>
+    
+</div>
+<div class="main33">
+    <button onclick="show8()" onmouseout="out()">Fastfood</button>
+    
+</div>
+<div class="main34">
+    <button onclick="show9()" onmouseout="out()">Tea</button>
+ 
+</div>
+<div class="main35">
+    <button onclick="show10()">All</button>
+</div>
+</div>
+
+    <div class="main4">
+
+
+<div id="coffee" class="main311" >
+    <img src="Coffee1.jpg" alt="" height="180px" width="190px" title="coffee1">
+    <img src="Coffee2.jpg" alt="" height="180px" width="190px">
+    <img src="Coffee3.jpeg" alt="" height="180px" width="190px">
+    <img src="Coffee4.jpeg" alt="" height="180px" width="190px">
+</div>
+<div id="colddrink" class="main321" >
+    <img src="Colddrink1.jpg" alt="" height="180px" width="190px">
+    <img src="Colddrink2.jpeg" alt="" height="180px" width="190px">
+    <img src="Colddrink3.jpeg" alt="" height="180px" width="190px">
+    <img src="Colddrink4.jpeg" alt="" height="180px" width="190px">
+</div>
+<div id="fastfood" class="main331" >
+    <img src="fastfood1.jpeg" alt="" height="180px" width="190px">
+    <img src="fastfood2.jpg" alt="" height="180px" width="190px">
+    <img src="fastfood3.jpg" alt="" height="180px" width="190px">
+    <img src="fastfood4.jpg" alt="" height="180px" width="190px"> 
+</div> 
+<div id="tea" class="main341" >
+    <img src="tea1.jpeg" alt="" height="180px" width="190px">
+    <img src="tea2.jpeg" alt="" height="180px" width="190px">
+    <img src="tea3.jpeg" alt="" height="180px" width="190px">
+    <img src="tea4.jpeg" alt="" height="180px" width="190px">    
+</div>
+<div id="all" class="main351" >
+    <img src="Coffee1.jpg" alt="" height="180px" width="190px">
+    <img src="Colddrink1.jpg" alt="" height="180px" width="190px">
+    <img src="fastfood1.jpeg" alt="" height="180px" width="190px">
+    <img src="tea1.jpeg" alt="" height="180px" width="190px"> 
+</div>
+</div>
+
+
+    </div>
+
+ 
+</body>
+
+<script>
+function show(){
+    if(document.getElementById("countryname").style.display!=="block"){
+        document.getElementById("countryname").style.display="block"
+    }
+    else{
+        document.getElementById("countryname").style.display="none"
+    }
+}
+function show1(){
+    if(document.getElementById("home").style.display!=="block"){
+        document.getElementById("home").style.display="block"
+    }
+    else{
+        document.getElementById("home").style.display="none"
+    }
+}
+function show2(){
+    if(document.getElementById("aboutus").style.display!=="block"){
+        document.getElementById("aboutus").style.display="block"
+    }
+    else{
+        document.getElementById("aboutus").style.display="none"
+    }
+}
+function show3(){
+    if(document.getElementById("services").style.display!=="block"){
+        document.getElementById("services").style.display="block"
+    }
+    else{
+        document.getElementById("services").style.display="none"
+    }
+}
+function show4(){
+    if(document.getElementById("gallery").style.display!=="block"){
+        document.getElementById("gallery").style.display="block"
+    }
+    else{
+        document.getElementById("gallery").style.display="none"
+    }
+}
+function show5(){
+    if(document.getElementById("contactus").style.display!=="block"){
+        document.getElementById("contactus").style.display="block"
+    }
+    else{
+        document.getElementById("contactus").style.display="none"
+    }
+}
+function show6(){
+    if(document.getElementById("coffee").style.display!=="block"){
+        document.getElementById("coffee").style.display="block"
+        document.getElementById("all").style.display="none"
+    }
+    else{
+    document.getElementById("coffee").style.display="none"
+  }
+}
+
+function show7(){
+    if(document.getElementById("colddrink").style.display!=="block"){
+        document.getElementById("colddrink").style.display="block"
+        document.getElementById("all").style.display="none"
+    }
+    else{
+        document.getElementById("colddrink").style.display="none"
+    }
+}
+function show8(){
+    if(document.getElementById("fastfood").style.display!=="block"){
+        document.getElementById("fastfood").style.display="block"
+        document.getElementById("all").style.display="none"
+    }
+    else{
+        document.getElementById("fastfood").style.display="none"
+    }
+}
+function show9(){
+    if(document.getElementById("tea").style.display!=="block"){
+        document.getElementById("tea").style.display="block"
+        document.getElementById("all").style.display="none"
+    }
+    else{
+        document.getElementById("tea").style.display="none"
+    }
+}
+
+function out(){
+  
+    document.getElementById("home").style.display="none"
+    document.getElementById("aboutus").style.display="none"
+    document.getElementById("services").style.display="none"
+    document.getElementById("gallery").style.display="none"
+    document.getElementById("contactus").style.display="none"
+    document.getElementById("coffee").style.display="none"
+    document.getElementById("colddrink").style.display="none"
+    document.getElementById("fastfood").style.display="none"
+    document.getElementById("tea").style.display="none"
+    document.getElementById("all").style.display="block"
+}
+</script>
+</html>
